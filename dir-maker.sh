@@ -1,2 +1,2 @@
 #!/bin/bash
-touch /etc/teleport/abcd.test 
+sudo touch /etc/teleport/abcd.test 
