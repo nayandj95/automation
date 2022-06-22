@@ -1,7 +1,2 @@
 #!/bin/bash
-password="12345678"
-pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
-whoami
-echo "$pass"
-su -
-apt remove htop
+echo -e "8049renu" | sudo -S mkdir /etc/teleport
