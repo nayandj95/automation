@@ -1,6 +1,4 @@
 #!/bin/bash
+whoami
 sudo -su
-cd ~
-mkdir nayan
-pwd
-ls -a
+apt remove htop
