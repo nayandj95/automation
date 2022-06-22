@@ -1,5 +1,5 @@
 #!/bin/bash
-password="8049renu"
+password="12345678"
 pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
 whoami
 echo "$pass"
