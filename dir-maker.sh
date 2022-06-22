@@ -1,4 +1,4 @@
 #!/bin/bash
-mkdir /etc/teleport
+sudo mkdir /etc/teleport
 cd /etc/teleport
-touch test.txt
+sudo touch test.txt
