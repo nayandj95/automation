@@ -1,7 +1,7 @@
 #!/bin/bash
 #Variables for the following setup
-URl= 'https://www.tooplate.com/zip-template/2098_health.zip'
-ART_NAME='2098_health'
+URl= 'https://www.tooplate.com/zip-templates/2114_pixie.zip'
+ART_NAME='2114_pixie'
 TEMPDIR='/tmp/webfiles'
 
 yum --help &> /dev/null
@@ -16,7 +16,7 @@ then
         echo "#############################################################"
         echo "Installing Packages...."
         echo "#############################################################"
-        echo 8049renu | sudo -S -u root yum install $Packages -y >/dev/null
+        echo 8049renu | sudo -S -u root yum install -y $PACKAGE_NAME  >/dev/null
         echo
 
         # Start & enable service
