@@ -44,7 +44,7 @@ then
         echo "#############################################################"
         echo "Restarting HTTPD service"
         echo "#############################################################"
-        echo 8049renu | sudo -S -u systemctl restart $SVC
+        echo 8049renu | sudo -S -u root systemctl restart $SVC
         echo
 
         #clean up
@@ -62,13 +62,13 @@ else
         PACKAGE_NAME="apache2 wget unzip"
         SVC="apache2"
 
-        echo "Running setup on Centos..."
+        echo "Running setup on Debian"
         # installing Dependency
         echo "#############################################################"
         echo "Installing Packages...."
         echo "#############################################################"
         echo 8049renu | sudo -S -u root apt update -y
-        echo 8049renu | sudo -S -u root apt install $Packages -y >/dev/null
+        echo 8049renu | sudo -S -u root apt install $PACKAGE_NAME -y >/dev/null
         echo
 
         # Start & enable service
@@ -96,7 +96,7 @@ else
         echo "#############################################################"
         echo "Restarting HTTPD service"
         echo "#############################################################"
-        echo 8049renu | sudo -S -u systemctl restart $SVC
+        echo 8049renu | sudo -S -u root systemctl restart $SVC
         echo
 
         #clean up
