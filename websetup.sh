@@ -1,6 +1,6 @@
 #!/bin/bash
 #Variables for the following setup
-URl= 'https://www.tooplate.com/zip-templates/2114_pixie.zip'
+URL01= 'https://www.tooplate.com/zip-templates/2114_pixie.zip'
 ART_NAME='2114_pixie'
 TEMPDIR='/tmp/webfiles'
 
@@ -35,7 +35,7 @@ then
         echo 8049renu | sudo -S -u root cd $TEMPDIR
         echo
 
-        echo 8049renu | sudo -S -u root wget $URl >/dev/null
+        echo 8049renu | sudo -S -u root wget $URL01 >/dev/null
         echo 8049renu | sudo -S -u root unzip $ART_NAME.zip> /dev/null
         echo 8049renu | sudo -S -u root cp -r $ART_NAME/* /var/www/html
         echo
@@ -87,7 +87,7 @@ else
         echo 8049renu | sudo -S -u root cd $TEMPDIR
         echo
 
-        echo 8049renu | sudo -S -u root wget $URl >/dev/null
+        echo 8049renu | sudo -S -u root wget $URL01 >/dev/null
         echo 8049renu | sudo -S -u root unzip $ART_NAME.zip> /dev/null
         echo 8049renu | sudo -S -u root cp -r $ART_NAME/* /var/www/html
         echo
